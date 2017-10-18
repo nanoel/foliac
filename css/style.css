@@ -1,0 +1,216 @@
+body{
+	font: 400 16px/1.56 "Lato", Arial,sans-serif;
+	color: #3c4955;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1180px;
+}
+
+
+@font-face {
+    font-family: 'Big John';
+    src: url('../fonts/bigjohn-webfont.woff2') format('woff2'),
+         url('../fonts/bigjohn-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Slim Joe';
+    src: url('../fonts/slimjoe-webfont.woff2') format('woff2'),
+         url('../fonts/slimjoe-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	border-radius: 3px;
+	 border: 2px solid #48bf72;
+	 line-height: 35px;
+	 height: 39px;
+	 padding: 0 20px;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 color: #48bf72;
+	 font-size: 14px;
+	 font-weight: 700;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-intro {
+	padding: 36px 0 180px;
+ 	color: #fff;
+ 	background: #3c4955 url(../img/intro-bg.jpg) 50% 0;
+ 	background-size: cover;
+}
+
+.ba-logo {
+	float: left;
+}
+.ba-logo img {
+	display: block;
+}
+
+.ba-nav {
+	float: right;
+	padding-top: 36px;
+}
+
+.ba-menu {
+	margin: 0;
+	padding:0;
+	list-style: none;
+
+}
+
+.ba-menu li{
+	display: inline-block;
+
+}
+
+.ba-menu li:not(:first-child):before {
+	content: "";
+	height: 18px;
+	width: 1px;
+	background: rgba(255,255,255,.3);
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 56px;
+	transform: skew(-14deg);
+}
+
+.ba-menu a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.ba-menu a:hover {
+	color: #48bf72
+}
+
+.ba-intro-body {
+	text-align: center;
+	padding-top: 136px;
+}
+
+.ba-intro-title{
+	font-family: 'Big John';
+	font-size: 46px;
+	margin: 0;
+}
+
+.ba-intro-subtitle{
+	font-family: 'Slim Joe';
+	font-size: 30px;
+	margin: 0 0 38px;
+}
+
+.ba-portfolio {
+	padding: 100px 0;
+}
+
+.ba-work {
+	text-transform: center;
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	position: relative;
+
+}
+
+.ba-work img {
+	display: block;
+	border-radius: 10px;
+}
+
+.ba-work__caption {
+	background: rgba(72, 191, 114, 0.74);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 10px;
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+.ba-work:hover .ba-work__caption {
+	opacity: 1;
+}
+
+.ba-work__caption-body {
+	padding: 0 20px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 50%;
+	transform:translateY(-50%);
+	text-align: center;
+}
+
+[class*="ba-col-"]{
+	float: left;
+	margin-bottom: 40px;
+	padding-left: 40px;
+}
+
+.ba-row {
+	margin-left: -40px;
+}
+
+.ba-col-40 {
+	width: 41.8%;
+}
+
+.ba-col-60 {
+	width: 58.2%;
+}
